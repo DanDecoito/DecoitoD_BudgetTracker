@@ -1,0 +1,85 @@
+body {
+    background-color: #355070;
+}
+.budgetDisplay{
+    font-size: 25px;
+    background-color: #6D597A;
+    width: auto;
+
+    font-size: 25px;
+    background: linear-gradient(to bottom, #6D597A, #9B8AB9);
+    border: 2px solid #E6D4E6;
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.entryFields{
+    width: 118px;
+}
+.modalMargin{
+    margin-top: 10px;
+}
+.reportContent{
+    margin-top: 20px;
+    padding-top: 15px;
+    background-color: #53A2BE;
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(to bottom, #8963a2, #53A2BE);
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+.createdElementDiv {
+    background-color: #EE6352;
+    height:auto;
+}
+.createdReportElementText{
+    font-size: 14px;
+    overflow: hidden;
+}
+.createdElementDivOne {
+    background-color: #96E6B3;
+    height:auto;
+}
+
+.logButton{
+    height: 40px;
+    width: 40px;
+    background-color:  #355070;
+    margin-top: 10px;
+}
+.logImage{
+    height: 30px;
+    width: 30px;
+}
+.headerTitle{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pigImage {
+    height: 40px;
+    width: 40px;
+}
+.totalText{
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 800;
+}
+.moneyText{
+    line-height: 5px;
+}
+.reportContentBot{
+    
+    padding-top: 45px;
+    background-color: #53A2BE;
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(to bottom, #8963a2, #53A2BE);
+    border-radius: 0px 0px 20px 20px;
+}
+.DeleteButton{
+    background-color: red ;
+}

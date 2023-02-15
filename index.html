@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Budget</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+  <body>
+    <h1 class="headerTitle">Budget App</h1>
+
+    
+
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-3">
+            <button type="button" class="logButton btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./assets/LogImage.png" alt="" class="logImage">
+            </button>
+        </div>
+       <div class="col-1"></div>
+        <div id="" class="col-4 budgetDisplay">
+            <div class="row">
+                <p class="totalText">Current Total</p>
+            </div>
+             <p id="budgetInject" class="moneyText">$###</p> 
+           </div>
+
+       
+        </div>
+    </div>
+</div>
+<!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Report</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+<!-- Modal My Code Start -->
+            <div class="modal-body container">
+                <div class="row modalMargin">
+                    <div class="col-3">Type:</div>
+                    <div class="col-6">
+                        <select id="statusInput" class="form-select" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="1">Income</option>
+                            <option value="2">expense</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row modalMargin">
+                    <div class="col-4">Description:</div>
+                    <div class="col-4"><input class="entryFields" id="descEntry" type="text"></div>
+                </div>
+                <div class="row modalMargin">
+                    <div class="col-4">Amount:</div>
+                    <div class="col-4"><input class="entryFields" id="amountEntry" type="number"></div>
+                </div>
+                <div class="row modalMargin">
+                    <div class="col-3">Date:</div>
+                    <div class="col-6"><input id="dateEntry" type="date"></div>
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button id="saveButton" type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+    <div class="reportContent row">
+        <div class="col-3">
+            <p class="reportTitle">In/Out</p>
+        </div>
+        <div class="col-2">
+            <p class="reportTitle">Date</p>
+        </div>
+        <div class="col-3">
+            <p class="reportTitle">Info</p>
+        </div>
+        <div class="col-3">
+            <p class="reportTitle">Balance</p>
+        </div>
+        <div class="col-1"></div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="row">
+        <div id="injectSite" class="col-12"></div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="row reportContentBot"></div>
+   </div>
+  <!-- Modal End -->
+
+<!-- What we need
+    designed for mobile
+    we need to add or delete expenses and have amounts be updated
+    Track totals
+    -->
+   
+
+
+
+   <!-- I want to be able to
+        input all my income 
+        input all my expenses
+        variable for current money
+        for income/expense i want to be able to in type i.e. bill vs. groceries. vs fun
+        the amount
+        the date
+
+
+
+        everytime i put in a new income/expense i want it to show my current total
+        i would like, be able to have a calender kinda view where i can see all past inputs-->
+   
+        <!-- Create variables for -->
+        <!-- button with modal for user input fields -->
+        <!-- show -->
+
+   
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="module" src="./script/app.js"></script>
+  </body>
+</html>
